@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            transition: all 3s;
+            top: 50px;
+        }
+        .box::after{
+            content: "";
+            width: 0px;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transition: width 3s ease-in-out;
+
+        }
+        .box:hover::after{
+            width: 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+<h
+    </div>
+</body>
+</html>
